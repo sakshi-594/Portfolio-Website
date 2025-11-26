@@ -193,14 +193,22 @@
   <script src="portfoliooo.js"></script>
 
   <!-- Typed Text Animation -->
-  <script>
-    new Typed(".typed-text", {
-      strings: ["Sakshi", "a Web Developer", "a Designer"],
-      typeSpeed: 80,
-      backSpeed: 50,
-      loop: true
-    });
-  </script>
+ <script>
+  // slower, more natural typing
+  new Typed(".typed-text", {
+    strings: ["Sakshi", "a Web Developer", "a Designer"],
+    typeSpeed: 120,    
+    backSpeed: 60,   
+    startDelay: 600,   
+    backDelay: 1500,   
+    loop: true,
+    showCursor: true,
+    cursorChar: "|",
+    smartBackspace: true
+  });
+</script>
+
 
 </body>
 </html>
+
